@@ -1,0 +1,11 @@
+body {
+	background-color: #504a4a;
+}
+.male {
+	border-width: 2px;
+	border-color: blue;
+}
+.female {
+	border-width: 2px;
+	border-color: pink;
+}
