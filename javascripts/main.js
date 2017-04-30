@@ -26,7 +26,7 @@ $(document).ready(function(){
 			}
   			cardString+=`<div class="col-sm-6 col-md-3">`;
 		    cardString+=`<div class="thumbnail">`;
-        	cardString+=`<h3>${selectedCharacterArray[x].name}</h3>`;
+        	cardString+=`<h3 class="panel-heading">${selectedCharacterArray[x].name}</h3>`;
         	if (selectedCharacterArray[x].gender_id==="Male"){
 			    cardString+=`<img class = "img-circle male" src="${selectedCharacterArray[x].image}" alt="${selectedCharacterArray[x].name}">`;
 	        }else{
@@ -51,7 +51,6 @@ $(document).ready(function(){
 			} 
 		}
 		for (let k=0; k<characterArray.length; k++){
-				console.log(selectedTeam);
 			if(characterArray[k].team_id===selectedTeam){
 				selectedCharacterArray.push(characterArray[k]);
 			}
@@ -69,7 +68,6 @@ $(document).ready(function(){
 			let currentKeys =Object.keys(currentArray);
 			if (currentKeys.includes("type")){
 				genderArray[genderCounter]=mainArray[j];
-				console.log(genderArray);
 				genderCounter++;
 			}else if (currentKeys.length===2){
 				teamArray[teamCounter]=mainArray[j];
@@ -119,8 +117,6 @@ $(document).ready(function(){
 	};
 
 	$(".btn").click(dataGetter);
-
-
 
 
 });
