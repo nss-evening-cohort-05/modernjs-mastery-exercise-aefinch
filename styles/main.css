@@ -1,0 +1,33 @@
+body {
+	background-color: #504a4a;
+}
+.img {
+	border-radius: 100%;
+}
+.male {
+	border: 2px blue solid;
+}
+.female {
+	border: 2px pink solid;
+}
+.thumbnail {
+	background-color: #504a4a;
+	height: 460px;
+	padding-top: 0;
+}
+.panel-heading {
+	background-color: #f78f3f;
+	text-align: center;
+	margin-top: 0;
+	margin-left: -4px;
+	margin-right: -4px;
+}
+p {
+	color: #e23636;
+}
+.btn {
+	margin: 10px;
+}
+.navbar-brand {
+	padding: 5px;
+}
